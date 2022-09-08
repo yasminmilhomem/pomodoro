@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react";
 import work from './work.gif';
 
 export default function Pomodoro(){
-    const [minutes, setMinutes] = useState(0);
+    const [minutes, setMinutes] = useState(25);
     const [seconds, setSeconds] = useState (5);
     const [displayMessage, setDisplayMessage] = useState (false);
     
