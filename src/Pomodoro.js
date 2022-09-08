@@ -3,7 +3,7 @@ import work from './work.gif';
 
 export default function Pomodoro(){
     const [minutes, setMinutes] = useState(25);
-    const [seconds, setSeconds] = useState (5);
+    const [seconds, setSeconds] = useState (0);
     const [displayMessage, setDisplayMessage] = useState (false);
     
     useEffect (() => {
