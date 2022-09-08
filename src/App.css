@@ -42,6 +42,7 @@ body {
   color: #eabf9f;
   height: 100vh;
   font-family: 'Roboto Mono', monospace;
+  
 }
 
 #root{
@@ -63,9 +64,4 @@ body {
   font-size: 0.4em;
   min-height: 1.3em;
   margin-bottom: 0.5em;
-}
-
-.work {
-  align-items: flex-end;
-  align-content: flex-end;
 }
