@@ -36,3 +36,37 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  background-color: #1e212d;
+  color: #eabf9f;
+  height: 100vh;
+  font-family: 'Roboto Mono', monospace;
+  padding: 25px 50px 25px 50px;
+}
+
+#root{
+  height: 100%; 
+}
+
+.App {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.pomodoro {
+  font-size: 6em;
+}
+
+.message {
+  font-size: 0.4em;
+  min-height: 1.3em;
+  margin-bottom: 0.5em;
+}
+
+.work {
+  align-items: flex-end;
+  align-content: flex-end;
+}
