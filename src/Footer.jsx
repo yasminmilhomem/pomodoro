@@ -5,7 +5,7 @@ function Footer() {
   return (
     <>
     <footer>
-    Made with ♡ by Yasmin Milhomem © 2023
+    Made with ♡ by <a href="https://www.linkedin.com/in/yasminmilhomemdeoliveira/">Yasmin Milhomem</a> © 2023
     </footer>
     </>
   )
