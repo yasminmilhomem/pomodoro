@@ -13,7 +13,7 @@ body {
   align-content: center;
   background-color: #1e212d;
   color: #eabf9f;
-  height: 100vh;
+  height: 100%;
   font-family: 'Roboto Mono', monospace;
 }
 
@@ -25,12 +25,12 @@ body {
 }
 
 .pomodoro {
-  font-size: 6em;
+  font-size: 6rem;
 }
 
 .message {
-  font-size: 0.4em;
-  min-height: 1.3em;
-  margin-bottom: 0.5em;
+  font-size: 0.4rem;
+  min-height: 1.3rem;
+  margin-bottom: 0.5rem;
 }
 

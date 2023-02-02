@@ -1,4 +1,5 @@
 footer {
+    width: 100%;
     height: 3vh;
     padding: auto;
     text-align: center;
@@ -6,4 +7,5 @@ footer {
     justify-content: center;
     color: #000;
     background-color: #eabf9f;
+    margin: auto;
 }

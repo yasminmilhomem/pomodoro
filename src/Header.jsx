@@ -1,8 +1,11 @@
 import React from 'react'
+import './Header.css'
 
 function Header() {
   return (
-    <div>Pomme d'Oro</div>
+    <div className='header'>
+        <h1>Pomme d'Oro</h1>
+    </div>
   )
 }
 
