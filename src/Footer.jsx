@@ -1,8 +1,13 @@
 import React from 'react'
+import './Footer.css';
 
 function Footer() {
   return (
-    <div>Footer</div>
+    <>
+    <footer>
+    Made with ♡ by Yasmin Milhomem © 2023
+    </footer>
+    </>
   )
 }
 

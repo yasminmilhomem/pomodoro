@@ -1,11 +1,13 @@
 import './App.css';
-import Pomodoro from './Pomodoro';
+import Header from './Header';
+import Body from './Body';
 import Footer from './Footer';
 
 function App() {
   return (
     <div className="App">
-      <Pomodoro />
+      <Header />
+      <Body />
       <Footer />
     </div>
   );

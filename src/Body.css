@@ -1,0 +1,10 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 10;
+}
+
+img {
+    width: 12rem;
+    height: auto;
+}

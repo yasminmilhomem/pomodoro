@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from "react";
-import work from './work.gif';
+import './Body.css'
+import kitty from './kitty.gif';
 
 export default function Pomodoro(){
     const [minutes, setMinutes] = useState(25);
@@ -35,18 +36,21 @@ export default function Pomodoro(){
 
     return(
         <>
-        <img src={work} alt="working..."
-        height={300}
-        width={300}
-        style= {{alignSelf: 'center'}}
+            <div className="container">
+                <img src={kitty} alt="working..."
+                height={300}
+                width={300}
+                style= {{alignSelf: 'center'}}
 
-        />
-        <div className="pomodoro">
-                <div className="message">
-                    {displayMessage && <div>Hora do intervalo! Sua nova sessão começa em: </div>}
-                </div>
-                <div className="timer">{timerMinutes}:{timerSeconds}</div>
-            </div></>
+                />
+                <div className="pomodoro">
+                        <div className="message">
+                            {displayMessage && <div>Hora do intervalo! Sua nova sessão começa em: </div>}
+                        </div>
+                        <div className="timer">{timerMinutes}:{timerSeconds}</div>
+                    </div>
+            </div>
+        </>
     )
     
 }
