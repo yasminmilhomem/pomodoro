@@ -1,10 +1,10 @@
-.container {
+.body {
     display: flex;
     flex-direction: row;
     gap: 10;
 }
 
-img {
-    width: 14rem;
+.cat-animation {
     height: auto;
+    width: 22rem;
 }

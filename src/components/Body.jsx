@@ -1,8 +1,23 @@
-import React, {useState, useEffect} from "react";
+import React, {useState, useEffect, useRef } from "react";
 import './Body.css'
-import kitty from './kitty.gif';
+import Lottie from "lottie-web";
+import animationData from '../assets/lotties/working.json';
 
 export default function Pomodoro(){
+    const container = useRef(null)
+
+    useEffect(() => {
+      Lottie.loadAnimation({
+        container: container.current,
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        animationData: animationData
+      });
+      return () => { Lottie.destroy() }
+      
+    }, [])
+
     const [minutes, setMinutes] = useState(25);
     const [seconds, setSeconds] = useState (0);
     const [displayMessage, setDisplayMessage] = useState (false);
@@ -36,13 +51,11 @@ export default function Pomodoro(){
 
     return(
         <>
-            <div className="container">
-                <img src={kitty} alt="working..."
-                height={300}
-                width={300}
-                style= {{alignSelf: 'center'}}
-
-                />
+            <div className="body">
+                <div className="cat-animation">
+                    <div className="container" ref={container}>
+                    </div>
+                </div>
                 <div className="pomodoro">
                         <div className="message">
                             {displayMessage && <div>Hora do intervalo! Sua nova sessão começa em: </div>}

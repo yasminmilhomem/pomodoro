@@ -1,25 +1,20 @@
-#root{
-  height: 100%; 
-}
-
 * {
-  padding: 1rem;
-}
-
-body {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
+  margin: 0;
+  padding: 0;
   background-color: #1e212d;
   color: #eabf9f;
-  height: 100%;
   font-family: 'Roboto Mono', monospace;
 }
 
-
-.App {
-  height: 100%;
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: auto;
+  gap: 4rem;
+  height: 100vh;
+  max-width: 100%;
   justify-content: center;
   align-items: center;
 }
@@ -33,4 +28,3 @@ body {
   min-height: 1.3rem;
   margin-bottom: 0.5rem;
 }
-
